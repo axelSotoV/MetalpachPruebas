@@ -10,14 +10,15 @@
     --Gray: #bebebe;
 }
 
-
 /* NAVBAR */
 
 
-.navbar h2 {
+.navbar .tittle {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 1.7rem;
+    font-weight: bolder;
 }
 
 .arrow {
@@ -79,20 +80,14 @@ header h1 {
     width: 90%;
 }
 
-.acordeon-h2 {
-    display: flex;
-    align-items: center;
-    gap: .3rem;
-}
 
 .acordeon-contenedor h2:first-of-type {
     margin-top: 2.5rem;
 }
 
 .acordeon-contenedor h2 {
-    font-weight: 200;
     font-size: 1.8rem;
-    margin: 4rem .5rem;
+    margin: 4rem 0;
     margin-bottom: 2rem;
     color: var(--BlueDark);
 }
@@ -135,7 +130,7 @@ summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 2rem;
     color: var(--BlueDark);
 }
