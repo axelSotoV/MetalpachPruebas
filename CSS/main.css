@@ -188,9 +188,7 @@ header p span {
 }
 
 
-/* =========================================================
-                        MAIN — REDISEÑO
-   ========================================================= */
+/* MAIN */
 
 /* Encabezados de sección reutilizables */
 .section-header {
@@ -235,9 +233,7 @@ header p span {
 
 
 
-/* ----------------------------------
-            NOSOTROS
----------------------------------- */
+/* NOSOTROS */
 .nosotros-section {
     background: var(--White);
     padding: 5rem 2rem 4rem;
@@ -302,9 +298,7 @@ header p span {
 }
 
 
-/* ----------------------------------
-   SERVICIOS
----------------------------------- */
+/* SERVICIOS */
 .servicios-section {
     background: var(--SectionBg);
     padding: 5rem 2rem;
@@ -366,9 +360,7 @@ header p span {
 }
 
 
-/* ----------------------------------
-   GARANTÍAS
----------------------------------- */
+/* GARANTÍAS */
 .garantias-section {
     background: var(--BlueDark);
     padding: 5rem 2rem;
@@ -437,9 +429,7 @@ header p span {
 }
 
 
-/* ----------------------------------
-   PRODUCTOS
----------------------------------- */
+/* PRODUCTOS */
 .productos-section {
     background: var(--White);
     padding: 5rem 2rem;
@@ -562,9 +552,7 @@ header p span {
 }
 
 
-/* ----------------------------------
-   MAPA
----------------------------------- */
+/* DÓNDE ESTAMOS UBICADOS */
 .map-section {
     background: var(--White);
     padding: 5rem 2rem;
@@ -614,15 +602,14 @@ header p span {
     display: inline-flex;
     align-items: center;
     gap: .8rem;
-    background: var(--BlueDark);
-    color: var(--White);
-    font-family: 'Bai Jamjuree', sans-serif;
     font-size: 1.45rem;
     font-weight: 600;
+    margin-top: .4rem;
     padding: 1rem 1.8rem;
+    color: var(--White);
     border-radius: .7rem;
     text-decoration: none;
-    margin-top: .4rem;
+    background: var(--BlueDark);
     transition: background .2s, transform .15s;
 }
 
@@ -632,17 +619,17 @@ header p span {
 }
 
 .map-embed-wrap {
-    border-radius: var(--Radius);
-    overflow: hidden;
-    box-shadow: var(--Shadow);
     height: 28rem;
+    overflow: hidden;
+    border-radius: var(--Radius);
+    box-shadow: var(--Shadow);
 }
 
 .map-embed-wrap iframe {
-    border: none;
+    display: block;
     width: 100%;
     height: 100%;
-    display: block;
+    border: none;
 }
 
 /* Desktop: lado a lado */
@@ -659,51 +646,6 @@ header p span {
         flex: 1.4;
         height: 34rem;
     }
-}
-
-
-/* ----------------------------------
-   PAGO
----------------------------------- */
-.pago-section {
-    background: var(--AccentLight);
-    border-top: 1px solid #c8dff0;
-    border-bottom: 1px solid var(--CardBorder);
-    padding: 3rem 2rem;
-}
-
-.pago-inner {
-    max-width: 80rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 1.8rem;
-}
-
-.pago-icon {
-    font-size: 2.8rem;
-    color: var(--Accent);
-    flex-shrink: 0;
-    margin-top: .2rem;
-}
-
-.pago-text h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--Titles);
-    margin-bottom: .5rem;
-}
-
-.pago-text p {
-    font-size: 1.45rem;
-    color: var(--TextMuted);
-    opacity: 1;
-    line-height: 1.6;
-}
-
-.pago-text p strong {
-    color: var(--Accent);
-    font-weight: 700;
 }
 
 .btn-cotizar {
@@ -729,9 +671,7 @@ header p span {
 }
 
 
-/* ----------------------------------
-   MODAL
----------------------------------- */
+/* MODAL */
 .modal {
     display: none;
     position: fixed;
@@ -750,6 +690,7 @@ header p span {
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,.55);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
 }
 
@@ -854,9 +795,7 @@ header p span {
 }
 
 
-/* =========================================================
-   FOOTER (sin cambios)
-   ========================================================= */
+/* FOOTER */
 
 footer {
     color: var(--White);
@@ -982,7 +921,7 @@ footer {
     header {
         position: relative;
         padding: 10rem 4rem;
-        background: url('../Imágenes/slider-04.jpeg') center / cover no-repeat;
+        background: url('../Images/header.jpeg') center / cover no-repeat;
         border-bottom: none;
     }
 
