@@ -233,6 +233,8 @@ header p span {
     margin-bottom: 1.4rem;
 }
 
+
+
 /* ----------------------------------
             NOSOTROS
 ---------------------------------- */
@@ -702,6 +704,28 @@ header p span {
 .pago-text p strong {
     color: var(--Accent);
     font-weight: 700;
+}
+
+.btn-cotizar {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    background: #25d366;
+    color: var(--White);
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.1rem 2.2rem;
+    border-radius: .8rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .2s, transform .15s;
+}
+
+.btn-cotizar:hover {
+    background: #1db954;
+    transform: translateY(-1px);
 }
 
 
